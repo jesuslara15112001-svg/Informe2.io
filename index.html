@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe: Capa de Enlace de Datos (Modelo OSI)</title>
+    <!-- Vinculación con el archivo CSS separado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- PÁGINA 1: PORTADA -->
+    <div class="page portada">
+        
+        <!-- ENCABEZADO CON LOGO A LA IZQUIERDA Y TEXTO ALINEADO -->
+        <table class="tabla-encabezado">
+            <tr>
+                <td class="col-logo">
+                    <img src="logo-unefa.png" alt="Logo UNEFA" class="logo-unefa">
+                </td>
+                <td class="col-institucion">
+                    República Bolivariana de Venezuela<br>
+                    Ministerio del Poder Popular para la Defensa<br>
+                    Universidad Nacional Experimental Politécnica de la<br>
+                    Fuerza Armada Nacional Bolivariana<br>
+                    UNEFA – Núcleo Guárico<br>
+                    Ingeniería de Sistemas
+                </td>
+            </tr>
+        </table>
+
+        <div class="titulo-principal">
+            <span class="sub-etiqueta">INFORME TÉCNICO</span>
+            <h1>LA CAPA DE ENLACE DE DATOS<br><span class="modelo-texto">(MODELO OSI)</span></h1>
+        </div>
+
+        <div class="datos-pie">
+            <div class="profesor">
+                <span class="etiqueta-rol">PROFESOR:</span><br>
+                <strong>Raúl Blanco</strong>
+            </div>
+            <div class="bachiller">
+                <span class="etiqueta-rol">BACHILLER:</span><br>
+                <strong>Jesús Lara</strong><br>
+                <span class="cedula">V-31.079.893</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PÁGINA 2: CONTENIDO DEL INFORME -->
+    <div class="page contenido">
+        <h2>1. ¿Qué es la Capa de Enlace de Datos?</h2>
+        <p>
+            La <strong>Capa de Enlace de Datos</strong> es la segunda capa del modelo OSI. Su función principal es garantizar que la transferencia de información se realice de manera confiable y sin errores entre dos dispositivos que están conectados directamente en la misma red local (por ejemplo, mediante un cable de red o Wi-Fi).
+        </p>
+
+        <div class="analogia-box">
+            <strong>Explicación sencilla (El mensajero local):</strong><br>
+            Si la Capa de Red es el sistema de carreteras nacionales, la Capa de Enlace de Datos es el cartero local que entrega el sobre directamente en la puerta de la casa vecina, asegurándose de que la carta no llegue rota ni incompleta.
+        </div>
+
+        <h2>2. Funciones Principales</h2>
+        <p>Para cumplir con su objetivo, esta capa realiza tareas fundamentales:</p>
+        
+        <ul>
+            <li><strong>Encapsulamiento (Tramas):</strong> Agrupa los bits de información provenientes de la capa física en bloques organizados llamados <em>tramas</em> (frames).</li>
+            <li><strong>Control de Errores:</strong> Detecta si alguna trama de información se dañó o se perdió durante el viaje para solicitar que sea reenviada de inmediato.</li>
+            <li><strong>Control de Acceso al Medio (MAC):</strong> Regula qué dispositivo tiene permiso para enviar datos por el cable o el canal inalámbrico en un momento determinado, evitando que choquen las señales.</li>
+        </ul>
+
+        <h2>3. Conceptos Clave</h2>
+        <p>Los elementos esenciales que maneja esta capa son:</p>
+        <ul>
+            <li><strong>La Trama:</strong> Es el paquete de datos estructurado en esta capa, el cual incluye un encabezado y un código de verificación de errores al final.</li>
+            <li><strong>Dirección MAC:</strong> Es el identificador físico único que trae grabado de fábrica cada tarjeta de red (como la tarjeta de tu teléfono o computadora).</li>
+        </ul>
+
+        <h2>4. Dispositivo Principal: El Switch (Conmutador)</h2>
+        <p>
+            El equipo estrella de esta capa es el <strong>Switch</strong>. A diferencia de un repetidor antiguo, el switch es inteligente: lee las direcciones físicas (MAC) de los equipos conectados a él y envía la información únicamente al dispositivo que le corresponde, manteniendo la red ordenada y sin congestiones.
+        </p>
+
+        <h2>5. Conclusión</h2>
+        <p>
+            En resumen, la Capa de Enlace de Datos actúa como un puente indispensable para la comunicación local. Gracias al uso de las direcciones MAC y al control de errores, permite que los equipos de una misma oficina o hogar interactúen de forma segura y directa.
+        </p>
+    </div>
+
+</body>
+</html>
